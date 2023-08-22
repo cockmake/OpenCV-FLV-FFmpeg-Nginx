@@ -7,7 +7,7 @@ def main():
     if not cap.isOpened(): return
     height, width = cap.get(cv.CAP_PROP_FRAME_HEIGHT), cap.get(cv.CAP_PROP_FRAME_WIDTH)
     try:
-        create_stream = StreamCreate(height=height, width=width, fps=45)
+        create_stream = StreamCreate(url='rtmp://127.0.0.1:1935/live/make', height=height, width=width, fps=60)
         # create_stream2 = StreamCreate(url='rtmp://localhost:1935/live/make2', height=height, width=width, fps=60)
         # 多路推流
         while True:

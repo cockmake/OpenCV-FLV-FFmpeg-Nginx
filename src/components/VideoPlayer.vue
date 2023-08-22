@@ -3,8 +3,9 @@
     <video
       id="videoElement"
       controls
-      autoplay
-      style="object-fit: fill">浏览器不支持</video>
+      height="480"
+      width="640"
+      autoplay>浏览器不支持</video>
   </div>
 </template>
 

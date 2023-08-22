@@ -1,7 +1,7 @@
 import subprocess
 
 class StreamCreate:
-    def __init__(self, url='rtmp://127.0.0.1:1935/live/make', height=640, width=640, fps=45):
+    def __init__(self, url, height, width, fps=30):
         super(StreamCreate, self).__init__()
         size = (int(width), int(height))
         sizeStr = str(size[0]) + 'x' + str(size[1])
